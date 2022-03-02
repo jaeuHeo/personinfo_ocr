@@ -421,7 +421,7 @@ def resultprocess_extractor(request,path_list=['','',''],file_list:list=[],resul
     result_dic = {'doc_name': name_form, 'data': result_list}
 
     if method == "POST":
-        chmod(folder_path)
+        # chmod(folder_path)
         remove_file(method=method, folder_path = folder_path, file_list=file_list, pdf_extract_path=pdf_extract_path)
         handle_textfile(method, txt_path, result_data=result_dic)
 
